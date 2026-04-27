@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gallery</title>
+  <meta name="description" content="A simple, beautiful image gallery." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>The Gallery</h1>
+    <p>A simple collection of beautiful images</p>
+  </header>
+
+  <main>
+    <div class="gallery-grid" role="list" aria-label="Image gallery">
+
+      <div class="gallery-item" role="listitem" aria-label="Mountains">
+        <img src="https://picsum.photos/seed/mountains/800/600" alt="Mountains" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Mountains</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Forest path">
+        <img src="https://picsum.photos/seed/forest/800/600" alt="Forest path" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Forest path</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Ocean waves">
+        <img src="https://picsum.photos/seed/ocean/800/600" alt="Ocean waves" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Ocean waves</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Desert dunes">
+        <img src="https://picsum.photos/seed/desert/800/600" alt="Desert dunes" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Desert dunes</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="City skyline">
+        <img src="https://picsum.photos/seed/city/800/600" alt="City skyline" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">City skyline</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Autumn leaves">
+        <img src="https://picsum.photos/seed/autumn/800/600" alt="Autumn leaves" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Autumn leaves</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Snowy peaks">
+        <img src="https://picsum.photos/seed/snow/800/600" alt="Snowy peaks" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Snowy peaks</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Tropical beach">
+        <img src="https://picsum.photos/seed/beach/800/600" alt="Tropical beach" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Tropical beach</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Waterfall">
+        <img src="https://picsum.photos/seed/waterfall/800/600" alt="Waterfall" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Waterfall</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Sunset">
+        <img src="https://picsum.photos/seed/sunset/800/600" alt="Sunset" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Sunset</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Wildflowers">
+        <img src="https://picsum.photos/seed/flowers/800/600" alt="Wildflowers" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Wildflowers</span></div>
+      </div>
+
+      <div class="gallery-item" role="listitem" aria-label="Starry night">
+        <img src="https://picsum.photos/seed/stars/800/600" alt="Starry night" loading="lazy" />
+        <div class="overlay"><span class="overlay-caption">Starry night</span></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">&#x2715;</button>
+    <button id="lightbox-prev" class="lightbox-prev" aria-label="Previous image">&#x2190;</button>
+    <button id="lightbox-next" class="lightbox-next" aria-label="Next image">&#x2192;</button>
+    <div id="lightbox-counter" class="lightbox-counter" aria-live="polite"></div>
+  </div>
+
+  <footer>
+    <p>The Gallery &mdash; Images via <a href="https://picsum.photos" style="color: inherit;">Lorem Picsum</a></p>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>
